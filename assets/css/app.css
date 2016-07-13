@@ -4084,7 +4084,7 @@ body, html {
   position: relative;
   z-index: 0;
   min-height: 100%;
-  background-image: url(./img/food_boxes_bgrd.jpg); }
+  background-image: url(/../img/food_boxes_bgrd.jpg); }
 
 .dark-overlay {
   position: absolute;
