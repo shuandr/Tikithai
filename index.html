@@ -14,26 +14,25 @@
 
     <section id="home-section" class="first-bgrd parallax">
       <div class="dark-overlay">  </div>
-    
       <div class="lang-select">
-      <a href="index.html">UA</a>
-      <a href="index_en.html">EN</a>
+        <a href="index.html">UA</a>
+        <a href="index_en.html">EN</a>
       </div>
-    
-      <header class="vert-middle">
+      <!-- logo & menu large screen -->
+      <header class="vert-middle show-for-large">
         <div  class="expanded row text-center " data-equalizer data-equalize-on="large">
-          <div class="show-for-large large-4 column va-middle" data-equalizer-watch >
+          <div class="large-4 column va-middle" data-equalizer-watch >
             <div class="menu-centered header-menu-outer">
-              <ul class="menu header-menu">
-                <li class="uppercase  font-display"><a href="#food-menu">їжа</a></li>
-                <li class="uppercase  font-display"><a href="#beverages">напої</a></li>
+              <ul class="menu header-menu uppercase font-display">
+                <li><a href="#food-menu">їжа</a></li>
+                <li><a href="#beverages">напої</a></li>
               </ul>
             </div>
           </div>
           <div class="small-centered small-8 large-uncentered large-4 column main-logo" data-equalizer-watch>
             <img src="assets/img/logo_main.svg" width="92%" height="auto" alt="">
           </div>
-          <div class="show-for-large large-4 column va-middle" data-equalizer-watch>
+          <div class="large-4 column va-middle" data-equalizer-watch>
             <div class="menu-centered header-menu-outer">
               <ul class="menu header-menu">
                 <li class="uppercase font-display"><a href="#restaurants">заклади</a></li>
@@ -42,19 +41,31 @@
             </div>
           </div>
         </div>
-        <div class="hide-for-large">
-          <div class="menu-centered header-menu-outer">
-            <ul class="vertical medium-horizontal menu header-menu">
-              <li class="uppercase font-display"><a href="#food-menu">їжа</a></li>
-              <li class="uppercase font-display"><a href="#beverages">напої</a></li>
-              <li class="uppercase font-display"><a href="#restaurants">заклади</a></li>
-              <li class="uppercase font-display"><a href="#google-maps">мапа</a></li>
-              <li class="franchise"><a href="franchise.html" class="warning large hollow button uppercase" >франчайзинг</a></li>
+      </header>
+      <!-- END logo & menu large screen -->
+      <!-- logo & menu SMALL screen -->
+      <header>
+        <div class="small-header hide-for-large text-center">
+          <div class="row column main-logo" >
+            <img src="assets/img/logo_main.svg" width="64%"  alt="logo">
+          </div>
+          <div class="white-section">
+        <h6 class="uppercase gold">тайська їжа</h6>
+      </div>
+          <div class="menu-centered ">
+            <ul class="vertical menu header-menu uppercase font-display">
+              <li><a href="#food-menu">їжа</a>
+              <a href="#beverages">напої</a></li>
+              <li><a href="#restaurants">заклади</a></li>
+              <li><a href="#google-maps">мапа</a></li>
+              <li><a href="franchise.html">франчайзинг</a></li>
             </ul>
           </div>
         </div>
       </header>
-      <div id="thai-food" class="expanded row show-for-medium white-section">
+    
+    
+      <div id="thai-food" class="expanded row show-for-large white-section">
         <h4 class="text-center uppercase gold">тайська їжа   |   thai food</h4>
       </div>
       <div id="franchise" class="row column show-for-large text-right franchise">
@@ -114,7 +125,7 @@
         <h2 class="uppercase">супи</h2>
       </div>
       <div id="soups" class="row large-8 column">
-        <div class="row small-up-1 medium-up-3">
+        <div class="row small-up-2 medium-up-3">
           <div class="column text-center favours">
             <img src="assets/img/tom-yam_soup.png"  alt="">
             <h6 class="uppercase ">том ям</h6>
@@ -221,7 +232,6 @@
       </div>
       <!-- END OF MAPS -->
     </section>
-    
     <footer class="text-center gold">
       <div id="partners" class="expanded row"  >
         <div class="medium-3 column" >
