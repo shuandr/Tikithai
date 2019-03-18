@@ -191,7 +191,7 @@
         <div id="soybean-box" class=" column">
           <a href="assets/img/box-wog-04.png"><img src="assets/img/box-wog-04_th.png"></a>
         </div>
-        <div id="basmati-box" class=" column">
+        <div id="basmati-box" class=" column ">
           <a href="assets/img/box-wog-05.png"><img src="assets/img/box-wog-05_th.png"></a>
         </div>
       </div>
@@ -205,7 +205,7 @@
             </div>
           </div>
         </div><br>  
-        <h6 class="gold uppercase"> більше апетитних страв та комбінацій  за оригінальними рецептами <br> можна замовити тут: <a href="http://infood.com.ua/lviv/uk/694-tikithai" target="_blank"><img src="assets/img/in-food_logo.png" width="180px"></a></h6>
+        <!-- <h6 class="gold uppercase"> більше апетитних страв та комбінацій  за оригінальними рецептами <br> можна замовити тут: <a href="http://infood.com.ua/lviv/uk/694-tikithai" target="_blank"><img src="assets/img/in-food_logo.png" width="180px"></a></h6> -->
       </div>
     </section>
     <section id="beverages">
@@ -287,6 +287,16 @@
           <div id="googleMapFranek" style="width:100%;height:360px;"></div><br>
           <h6 class="text-center"><img src="assets/img/map-pin.png" width="24px"> Незалежності, 15</h6><br>
         </div>
+         <div class="large-6 column gold">
+          <h4 class="text-center uppercase">Тернопіль:</h4>
+          <div id="googleMapTern" style="width:100%;height:360px;"></div><br>
+          <h6 class="text-center"><img src="assets/img/map-pin.png" width="24px"> Гетьмана Сагайдачного, 8</h6><br>
+        </div>
+         <div class="large-6 column gold">
+          <h4 class="text-center uppercase">Чернівці:</h4>
+          <div id="googleMapChe" style="width:100%;height:360px;"></div><br>
+          <h6 class="text-center uppercase"><img src="assets/img/map-pin.png" width="24px"> відкриття незабаром</h6><br>
+        </div>
       </div>
       <!-- END OF MAPS -->
     </section>
@@ -295,7 +305,6 @@
         <div class="medium-3 column" >
           <h5 class="uppercase">ПАРТНЕРИ:</h5>
         </div>
-    
         <div class="medium-9 column">
           <div class="row"><div class="small-4 column" >
             <div class="center" >
@@ -311,7 +320,6 @@
               <img src="assets/img/Familia_wok_logo_w.svg" alt=""></a>
             </div>
           </div>
-    
           <div class="small-4 column" >
             <div class="center" >
               <a href="https://www.facebook.com/familiawaffle" target="_blank">
@@ -320,25 +328,31 @@
           </div></div>
         </div>
         
-      </div> 
+      </div>
       <hr>
-    
       <h5 class="uppercase">контакти:</h5>
       <div class="expanded row">
-        <div class="medium-4 column">
+        <div class="medium-6 large-3 column">
           <h6 class="uppercase">Львів</h6>
           <p>Крива Липа, 9 <br> Староєврейська, 4</p>
           <p><span class="white">доставка: </span><br>
           <a class="phone-num" href="tel://+380981757787">098 175-77-87</a></p>
         </div>
-        <div class="medium-4 column">
+        <div class="medium-6 large-3 column">
           <h6 class="uppercase">Івано-Франківськ</h6>
           <p>вул. Незалежності, 15</p>
           <p><span class="white">доставка:</span> <br>
           <a class="phone-num" href="tel://+380954873530">095 487-35-30</a> <br>
           <a class="phone-num" href="tel://+380978553826">097 855-38-26</a></p>
         </div>
-        <div class="medium-4 column">
+        <div class="medium-6 large-3 column">
+          <h6 class="uppercase">Тернопіль</h6>
+          <p>вул. Гетьмана Сагайдачного, 8</p>
+          <p>
+            <!-- <span class="white">доставка:</span> <br> -->
+          <a class="phone-num" href="tel://+380681177227">068 117-72-27</a> </p><br>
+        </div>
+        <div class="medium-6 large-3 column">
           <h6 class="uppercase">Франчайзинг</h6>
           <p>
             <a class="phone-num" href="tel://+380979079574">097 907-95-74</a> <br>
@@ -346,8 +360,8 @@
           </div>
         </div>
         <hr>
-    <p class="text-right"> <small>© Всі права застережено. 2016</small></p>  
-    </footer>
+        <p class="text-right"> <small>© Всі права застережено. 2016</small></p>
+      </footer>
   <script src="assets/js/app.js"></script>
       <script src="assets/js_plugins/owl.carousel.min.js"></script>
 
@@ -362,6 +376,8 @@
       var myGalyLviv=new google.maps.LatLng(49.840275, 24.031355);
 
       var myCenterFranek=new google.maps.LatLng(48.920133, 24.709970);
+      var myCenterTern=new google.maps.LatLng(49.552801, 25.593350);
+      var myCenterChe=new google.maps.LatLng(48.322857, 25.950290);
       var tikiPin='assets/img/map-pin.png';
 
 function initialize()
@@ -385,8 +401,30 @@ var mapPropFranek = {
   mapTypeId:google.maps.MapTypeId.ROADMAP
   };
 
+  var mapPropTern = {
+  zoomControl: true,
+  scrollwheel: false,
+  center:myCenterTern,
+  zoom:16,
+  disableDefaultUI: true,
+
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+  var mapPropChe = {
+  zoomControl: true,
+  scrollwheel: false,
+  center:myCenterChe,
+  zoom:16,
+  disableDefaultUI: true,
+
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
 var mapLviv=new google.maps.Map(document.getElementById("googleMapLviv"),mapPropLviv);
 var mapFranek=new google.maps.Map(document.getElementById("googleMapFranek"),mapPropFranek);
+var mapTern=new google.maps.Map(document.getElementById("googleMapTern"),mapPropTern);
+var mapChe=new google.maps.Map(document.getElementById("googleMapChe"),mapPropChe);
 
 var myLypaMarker=new google.maps.Marker({
   position: myLypaLviv,
@@ -407,6 +445,20 @@ var myFranekMarker=new google.maps.Marker({
   icon: tikiPin,
   map: mapFranek,
   title: 'Незалежності,15'
+  });
+
+var myTernMarker=new google.maps.Marker({
+  position: myCenterTern,
+  icon: tikiPin,
+  map: mapTern,
+  title: 'Гетьмана Сагайдачного,8'
+  });
+
+var myCheMarker=new google.maps.Marker({
+  position: myCenterChe,
+  icon: tikiPin,
+  map: mapChe,
+  title: 'незабаром відкриття'
   });
 
 

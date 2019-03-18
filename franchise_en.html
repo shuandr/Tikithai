@@ -71,7 +71,7 @@
       </div>
       <div class="large-6 column text-center"><br>
         <h4 class="uppercase ">Легендарне меню</h4><br>
-        <img src="assets/img/menu_old_round.png" width="62%" alt=""><br><br>
+        <img src="assets/img/frn-menu.jpg" alt=""><br><br>
         <ul class="text-left">
           <li>Оригінальні екзотичні інгредієнти в поєднанні з натуральними українськими складниками </li>
           <li>Асортимент найпопулярніших азійських страв швидкого приготування </li>
@@ -135,9 +135,8 @@
     <footer class="text-center gold">
       <div id="partners" class="expanded row"  >
         <div class="medium-3 column" >
-          <h5 class="uppercase">ПАРТНЕРИ:</h5>
+          <h5 class="uppercase">partners:</h5>
         </div>
-    
         <div class="medium-9 column">
           <div class="row"><div class="small-4 column" >
             <div class="center" >
@@ -153,7 +152,6 @@
               <img src="assets/img/Familia_wok_logo_w.svg" alt=""></a>
             </div>
           </div>
-    
           <div class="small-4 column" >
             <div class="center" >
               <a href="https://www.facebook.com/familiawaffle" target="_blank">
@@ -162,34 +160,41 @@
           </div></div>
         </div>
         
-      </div> 
+      </div>
       <hr>
-    
-      <h5 class="uppercase">контакти:</h5>
+      <h5 class="uppercase">contacts:</h5>
       <div class="expanded row">
-        <div class="medium-4 column">
-          <h6 class="uppercase">Львів</h6>
-          <p>Крива Липа, 9 <br> Староєврейська, 4</p>
-          <p><span class="white">доставка: </span><br>
+        <div class="medium-6 large-3 column">
+          <h6 class="uppercase">Lviv</h6>
+          <p>Kryva Lypa, 9 <br> Starojevrejska street, 4</p>
+          <p><span class="white">takeaway: </span><br>
           <a class="phone-num" href="tel://+380981757787">098 175-77-87</a></p>
         </div>
-        <div class="medium-4 column">
-          <h6 class="uppercase">Івано-Франківськ</h6>
-          <p>вул. Незалежності, 15</p>
-          <p><span class="white">доставка:</span> <br>
+        <div class="medium-6 large-3 column">
+          <h6 class="uppercase">Ivano-Frankivsk</h6>
+          <p>Nezalezhnosti street, 15</p>
+          <p><span class="white">takeaway:</span> <br>
           <a class="phone-num" href="tel://+380954873530">095 487-35-30</a> <br>
           <a class="phone-num" href="tel://+380978553826">097 855-38-26</a></p>
         </div>
-        <div class="medium-4 column">
-          <h6 class="uppercase">Франчайзинг</h6>
+        <div class="medium-6 large-3 column">
+          <h6 class="uppercase">Ternopil</h6>
+          <p>Hetman Sahajdachny street,8</p>
+          <p>
+            <!-- <span class="white">takeaway:</span> <br> -->
+            <a class="phone-num" href="tel://+380681177227">068 117-72-27</a> <br>
+          </p>
+        </div>
+        <div class="medium-6 large-3 column">
+          <h6 class="uppercase">Franchising</h6>
           <p>
             <a class="phone-num" href="tel://+380979079574">097 907-95-74</a> <br>
             <a class="phone-num" href="tel://+380677101190">067 710-11-90</a></p>
           </div>
         </div>
         <hr>
-    <p class="text-right"> <small>© Всі права застережено. 2016</small></p>  
-    </footer>
+        <p class="text-right"> <small>© All rights reserved. 2016</small></p>
+      </footer>
   <script src="assets/js/app.js"></script>
       <script src="assets/js_plugins/owl.carousel.min.js"></script>
 
@@ -204,6 +209,8 @@
       var myGalyLviv=new google.maps.LatLng(49.840275, 24.031355);
 
       var myCenterFranek=new google.maps.LatLng(48.920133, 24.709970);
+      var myCenterTern=new google.maps.LatLng(49.552801, 25.593350);
+      var myCenterChe=new google.maps.LatLng(48.322857, 25.950290);
       var tikiPin='assets/img/map-pin.png';
 
 function initialize()
@@ -227,8 +234,30 @@ var mapPropFranek = {
   mapTypeId:google.maps.MapTypeId.ROADMAP
   };
 
+  var mapPropTern = {
+  zoomControl: true,
+  scrollwheel: false,
+  center:myCenterTern,
+  zoom:16,
+  disableDefaultUI: true,
+
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+  var mapPropChe = {
+  zoomControl: true,
+  scrollwheel: false,
+  center:myCenterChe,
+  zoom:16,
+  disableDefaultUI: true,
+
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
 var mapLviv=new google.maps.Map(document.getElementById("googleMapLviv"),mapPropLviv);
 var mapFranek=new google.maps.Map(document.getElementById("googleMapFranek"),mapPropFranek);
+var mapTern=new google.maps.Map(document.getElementById("googleMapTern"),mapPropTern);
+var mapChe=new google.maps.Map(document.getElementById("googleMapChe"),mapPropChe);
 
 var myLypaMarker=new google.maps.Marker({
   position: myLypaLviv,
@@ -249,6 +278,20 @@ var myFranekMarker=new google.maps.Marker({
   icon: tikiPin,
   map: mapFranek,
   title: 'Незалежності,15'
+  });
+
+var myTernMarker=new google.maps.Marker({
+  position: myCenterTern,
+  icon: tikiPin,
+  map: mapTern,
+  title: 'Гетьмана Сагайдачного,8'
+  });
+
+var myCheMarker=new google.maps.Marker({
+  position: myCenterChe,
+  icon: tikiPin,
+  map: mapChe,
+  title: 'незабаром відкриття'
   });
 
 
