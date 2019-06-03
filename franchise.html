@@ -167,7 +167,7 @@
       <div class="expanded row">
         <div class="medium-6 large-3 column">
           <h6 class="uppercase">Львів</h6>
-          <p>Крива Липа, 9 <br> Староєврейська, 4</p>
+          <p>Крива Липа, 9 <br> Староєврейська, 4 <br>Кульпарківська, 59</p>
           <p><span class="white">доставка: </span><br>
           <a class="phone-num" href="tel://+380981757787">098 175-77-87</a></p>
         </div>
@@ -181,9 +181,9 @@
         <div class="medium-6 large-3 column">
           <h6 class="uppercase">Тернопіль</h6>
           <p>вул. Гетьмана Сагайдачного, 8</p>
-          <p>
-            <!-- <span class="white">доставка:</span> <br> -->
-          <a class="phone-num" href="tel://+380681177227">068 117-72-27</a> </p><br>
+          <p>      <a class="phone-num" href="tel://+380681177227">068 117-72-27</a> </p><br>
+          <h6 class="uppercase">Чернівці</h6>
+          <p>вул. Головна, 265а</p>
         </div>
         <div class="medium-6 large-3 column">
           <h6 class="uppercase">Франчайзинг</h6>
@@ -201,12 +201,13 @@
     <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAfuN7UgfDB2RfqBeNIZ1S_rpZ6HU-GKYU"></script>
     <script>
     
-    var myCenterLviv=new google.maps.LatLng(49.841289, 24.029273);
+    var myCenterLviv=new google.maps.LatLng( 49.834669, 24.011958 );
     var myLypaLviv=new google.maps.LatLng(49.840726, 24.026054);
     var myGalyLviv=new google.maps.LatLng(49.840275, 24.031355);
+    var myKulpaLviv=new google.maps.LatLng(49.826935, 23.990317);
     var myCenterFranek=new google.maps.LatLng(48.920133, 24.709970);
     var myCenterTern=new google.maps.LatLng(49.552801, 25.593350);
-    var myCenterChe=new google.maps.LatLng(48.322857, 25.950290);
+    var myCenterChe=new google.maps.LatLng(48.258833, 25.956644);
     var tikiPin='assets/img/map-pin.png';
     function initialize()
     {
@@ -214,7 +215,7 @@
     zoomControl: true,
     scrollwheel: false,
     center:myCenterLviv,
-    zoom:16,
+    zoom:13,
     disableDefaultUI: true,
     mapTypeId:google.maps.MapTypeId.ROADMAP
     };
@@ -257,6 +258,12 @@
     icon: tikiPin,
     map: mapLviv,
     title: 'Староєврейська, 4'
+    });
+    var myKulpaMarker=new google.maps.Marker({
+    position: myKulpaLviv,
+    icon: tikiPin,
+    map: mapLviv,
+    title: 'Кульпарківська, 59'
     });
     var myFranekMarker=new google.maps.Marker({
     position: myCenterFranek,

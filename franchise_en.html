@@ -35,16 +35,16 @@
             
             <span data-responsive-toggle="responsive-menu" data-hide-for="large">
               <button class="menu-icon" type="button" data-toggle></button>
-              <div class="title-bar-title uppercase font-display"><h6>меню</h6></div>
+              <div class="title-bar-title uppercase font-display"><h6>menu</h6></div>
             </span>
             <div id="responsive-menu" class="text-center">
               <div class="top-bar">
                 <div class="menu-centered header-menu-outer">
                   <ul class="vertical large-horizontal menu header-menu" data-dropdown-menu>
-                    <li class="uppercase  font-display"><a href="index.html#food-menu">їжа</a></li>
-                    <li class="uppercase  font-display"><a href="index.html#beverages">напої</a></li>
-                    <li class="uppercase  font-display"><a href="index.html#restaurants">заклади</a></li>
-                    <li class="uppercase  font-display"><a href="index.html#google-maps">мапа</a></li>
+                    <li class="uppercase  font-display"><a href="index_en.html#food-menu">food</a></li>
+                    <li class="uppercase  font-display"><a href="index_en.html#beverages">drinks</a></li>
+                    <li class="uppercase  font-display"><a href="index_en.html#restaurants">restaurants</a></li>
+                    <li class="uppercase  font-display"><a href="index_en.html#google-maps">map</a></li>
                   </ul>
                 </div>
               </div>
@@ -167,7 +167,7 @@
       <div class="expanded row">
         <div class="medium-6 large-3 column">
           <h6 class="uppercase">Lviv</h6>
-          <p>Kryva Lypa, 9 <br> Starojevrejska street, 4</p>
+          <p>Kryva Lypa, 9 <br> Starojevrejska street, 4 <br>Kulparkivska street, 59</p>
           <p><span class="white">takeaway: </span><br>
           <a class="phone-num" href="tel://+380981757787">098 175-77-87</a></p>
         </div>
@@ -181,9 +181,9 @@
         <div class="medium-6 large-3 column">
           <h6 class="uppercase">Ternopil</h6>
           <p>Hetman Sahajdachny street, 8</p>
-          <p>
-            <!-- <span class="white">takeaway:</span> <br> -->
-            <a class="phone-num" href="tel://+380681177227">068 117-72-27</a> <br>
+          <p>        <a class="phone-num" href="tel://+380681177227">068 117-72-27</a> <br>
+           <h6 class="uppercase">Chernivci</h6>
+          <p>Holovna street, 265а</p>
           </p>
         </div>
         <div class="medium-6 large-3 column">
@@ -202,12 +202,13 @@
     <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAfuN7UgfDB2RfqBeNIZ1S_rpZ6HU-GKYU"></script>
     <script>
     
-    var myCenterLviv=new google.maps.LatLng(49.841289, 24.029273);
+    var myCenterLviv=new google.maps.LatLng( 49.834669, 24.011958 );
     var myLypaLviv=new google.maps.LatLng(49.840726, 24.026054);
     var myGalyLviv=new google.maps.LatLng(49.840275, 24.031355);
+    var myKulpaLviv=new google.maps.LatLng(49.826935, 23.990317);
     var myCenterFranek=new google.maps.LatLng(48.920133, 24.709970);
     var myCenterTern=new google.maps.LatLng(49.552801, 25.593350);
-    var myCenterChe=new google.maps.LatLng(48.322857, 25.950290);
+    var myCenterChe=new google.maps.LatLng(48.258833, 25.956644);
     var tikiPin='assets/img/map-pin.png';
     function initialize()
     {
@@ -215,7 +216,7 @@
     zoomControl: true,
     scrollwheel: false,
     center:myCenterLviv,
-    zoom:16,
+    zoom:13,
     disableDefaultUI: true,
     mapTypeId:google.maps.MapTypeId.ROADMAP
     };
@@ -258,6 +259,12 @@
     icon: tikiPin,
     map: mapLviv,
     title: 'Староєврейська, 4'
+    });
+    var myKulpaMarker=new google.maps.Marker({
+    position: myKulpaLviv,
+    icon: tikiPin,
+    map: mapLviv,
+    title: 'Кульпарківська, 59'
     });
     var myFranekMarker=new google.maps.Marker({
     position: myCenterFranek,
