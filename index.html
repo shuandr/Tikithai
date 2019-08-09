@@ -280,7 +280,7 @@
         <div class="large-7 column gold">
           <h4 class="text-center uppercase">Львів:</h4>
           <div id="googleMapLviv" style="width:100%;height:360px;"></div><br>
-          <h6 class="text-center"> Староєврейська, 4 <img src="assets/img/map-pin.png" width="24px"> Крива Липа, 9 <img src="assets/img/map-pin.png" width="24px"> Кульпарківська, 59</h6><br>
+          <h6 class="text-center"> Староєврейська, 4 <img src="assets/img/map-pin.png" width="24px"> Крива Липа, 9 <br> Кульпарківська, 59 <img src="assets/img/map-pin.png" width="24px"> ТРЦ «Вікторія Ґарденс»</h6><br>
         </div>
         
         <div class="large-5 column gold">
@@ -369,10 +369,11 @@
     <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAfuN7UgfDB2RfqBeNIZ1S_rpZ6HU-GKYU"></script>
     <script>
     
-    var myCenterLviv=new google.maps.LatLng( 49.834669, 24.011958 );
+    var myCenterLviv=new google.maps.LatLng( 49.826450, 24.009124 );
     var myLypaLviv=new google.maps.LatLng(49.840726, 24.026054);
     var myGalyLviv=new google.maps.LatLng(49.840275, 24.031355);
     var myKulpaLviv=new google.maps.LatLng(49.826935, 23.990317);
+    var myGardenLviv=new google.maps.LatLng(49.807253, 23.979343);
     var myCenterFranek=new google.maps.LatLng(48.920133, 24.709970);
     var myCenterTern=new google.maps.LatLng(49.552801, 25.593350);
     var myCenterChe=new google.maps.LatLng(48.258833, 25.956644);
@@ -415,6 +416,7 @@
     var mapFranek=new google.maps.Map(document.getElementById("googleMapFranek"),mapPropFranek);
     var mapTern=new google.maps.Map(document.getElementById("googleMapTern"),mapPropTern);
     var mapChe=new google.maps.Map(document.getElementById("googleMapChe"),mapPropChe);
+    
     var myLypaMarker=new google.maps.Marker({
     position: myLypaLviv,
     icon: tikiPin,
@@ -432,6 +434,12 @@
     icon: tikiPin,
     map: mapLviv,
     title: 'Кульпарківська, 59'
+    });
+    var myGardenMarker=new google.maps.Marker({
+    position: myGardenLviv,
+    icon: tikiPin,
+    map: mapLviv,
+    title: 'Кульпарківська, 226'
     });
     var myFranekMarker=new google.maps.Marker({
     position: myCenterFranek,
