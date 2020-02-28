@@ -167,9 +167,16 @@
       <div class="expanded row">
         <div class="medium-6 large-3 column">
           <h6 class="uppercase">Львів</h6>
-          <p>Крива Липа, 9 <br> Староєврейська, 4 <br>Кульпарківська, 59<br>Кульпарківська, 226а</p>
-          <p><span class="white">доставка: </span><br>
-          <a class="phone-num" href="tel://+380981757787">098 175-77-87</a></p>
+          <p>Крива Липа, 9 <br> Староєврейська, 4 <br>Кульпарківська, 59 <br>Кульпарківська, 226а</p>
+          <a class="phone-num" href="tel://+380981757787">098 175-77-87</a><br>
+          <p><span class="white">доставка: </span></p>
+          <a href="https://glovoapp.com/uk/lvi/store/tikithai-lvi/" style="margin-right: 16px" target="_blank">
+            <img src="assets/img/glovo.png" alt="">
+          </a>
+          <a href="https://www.ubereats.com/uk-UA/lviv/food-delivery/familia-%D0%BF%D1%80%D0%BE%D0%B2-%D0%BA%D1%80%D0%B8%D0%B2%D0%B0-%D0%BB%D0%B8%D0%BF%D0%B0/Kl36jgKJRXuOwTIOxIPidw" target="_blank">
+            <img src="assets/img/uber-eats.png" alt="">
+          </a>
+    
         </div>
         <div class="medium-6 large-3 column">
           <h6 class="uppercase">Івано-Франківськ</h6>
@@ -201,10 +208,11 @@
     <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAfuN7UgfDB2RfqBeNIZ1S_rpZ6HU-GKYU"></script>
     <script>
     
-    var myCenterLviv=new google.maps.LatLng( 49.834669, 24.011958 );
+    var myCenterLviv=new google.maps.LatLng( 49.826450, 24.009124 );
     var myLypaLviv=new google.maps.LatLng(49.840726, 24.026054);
     var myGalyLviv=new google.maps.LatLng(49.840275, 24.031355);
     var myKulpaLviv=new google.maps.LatLng(49.826935, 23.990317);
+    var myGardenLviv=new google.maps.LatLng(49.807253, 23.979343);
     var myCenterFranek=new google.maps.LatLng(48.920133, 24.709970);
     var myCenterTern=new google.maps.LatLng(49.552801, 25.593350);
     var myCenterChe=new google.maps.LatLng(48.258833, 25.956644);
@@ -247,6 +255,7 @@
     var mapFranek=new google.maps.Map(document.getElementById("googleMapFranek"),mapPropFranek);
     var mapTern=new google.maps.Map(document.getElementById("googleMapTern"),mapPropTern);
     var mapChe=new google.maps.Map(document.getElementById("googleMapChe"),mapPropChe);
+    
     var myLypaMarker=new google.maps.Marker({
     position: myLypaLviv,
     icon: tikiPin,
@@ -264,6 +273,12 @@
     icon: tikiPin,
     map: mapLviv,
     title: 'Кульпарківська, 59'
+    });
+    var myGardenMarker=new google.maps.Marker({
+    position: myGardenLviv,
+    icon: tikiPin,
+    map: mapLviv,
+    title: 'Кульпарківська, 226 а'
     });
     var myFranekMarker=new google.maps.Marker({
     position: myCenterFranek,
