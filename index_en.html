@@ -1,15 +1,14 @@
 <!doctype html>
 <html class="no-js" lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="tikithai — тайська їжа" />
-    <meta property="og:description" content="тайські страви за оригінальними рецептами, з доставкою " />
+    <meta property="og:title" content="tikithai — тайська їжа"/>
+    <meta property="og:description" content="тайські страви за оригінальними рецептами, з доставкою "/>
     <meta property="og:image" content="http://tikithai.ua/og_image.jpg">
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://tikithai.ua/" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content= "http://tikithai.ua/" />
     <title>tikithai | тайська їжа</title>
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -18,11 +17,10 @@
     <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="favicon-192.png" sizes="192x192">
-</head>
-
-<body>
+  </head>
+  <body>
     <div id="preloader">
-        <div id="pre-logo"></div>
+      <div id="pre-logo"></div>
     </div>
     <section id="home-section" class="first-bgrd parallax">
         <div class="dark-overlay"></div>
@@ -182,16 +180,13 @@
             </div>
         </div>
         <div class="expanded row column text-center white-section">
-            <h4 class="gold uppercase">detailed menu</h4>
+            <h6 class="gold uppercase">detailed menu +delivery</h6>
             <div class="row">
                 <div class="column  large-centered">
-                    <div class="row large-collapse">
-                        <div class="large-6 column text-right"><a href="assets/img/menu_EN_1.jpg"><img class="lazy" data-src="assets/img/menu_EN_1_th.jpg" alt=""></a></div>
-                        <div class="large-6 column text-left"><a href="assets/img/menu_EN_2.jpg"><img class="lazy" data-src="assets/img/menu_EN_2_th.jpg" alt=""></a></div>
-                    </div>
+                    <a href="https://tiki.choiceqr.com" class="large button uppercase gold-bg">explore</a>
                 </div>
-            </div><br><br>
-            <!-- <h6 class="gold uppercase"> more dishes and combinations <br>  you can purchase here: <a href="http://infood.com.ua/lviv/uk/694-tikithai" target="_blank"><img src="assets/img/in-food_logo.png" width="180px"></a></h6> -->
+            </div>
+            <br>
         </div>
     </section>
     <section id="beverages">
@@ -334,6 +329,8 @@
                 <p>Nezalezhnosti street, 15</p>
                 <p><span class="white">takeaway:</span> <br>
                     <a class="phone-num" href="tel://+380680335577">(068) 033-55-77</a></p>
+                <!-- <a class="phone-num" href="tel://+380954873530">095 487-35-30</a> <br> -->
+                <!-- <a class="phone-num" href="tel://+380978553826">097 855-38-26</a></p> -->
             </div>
             <div class="medium-6 large-3 column">
                 <h6 class="uppercase">Ternopil</h6>
@@ -352,120 +349,112 @@
         </div>
         <hr>
         <p class="text-right"> <small>© All rights reserved. 2016</small></p>
-    </footer>
-    <script src="assets/js/app.js"></script>
+    </footer>    <script src="assets/js/app.js"></script>
     <script src="assets/js_plugins/owl.carousel.min.js"></script>
     <script src="assets/js_plugins/jquery.lazy.min.js"></script>
     <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAfuN7UgfDB2RfqBeNIZ1S_rpZ6HU-GKYU"></script>
     <script>
-    var myCenterLviv = new google.maps.LatLng(49.826450, 24.009124);
-    var myLypaLviv = new google.maps.LatLng(49.840726, 24.026054);
-    var myGalyLviv = new google.maps.LatLng(49.840275, 24.031355);
-    var myKulpaLviv = new google.maps.LatLng(49.826935, 23.990317);
-    var myGardenLviv = new google.maps.LatLng(49.807253, 23.979343);
-    var myCenterFranek = new google.maps.LatLng(48.920133, 24.709970);
-    var myCenterTern = new google.maps.LatLng(49.552801, 25.593350);
-    var myCenterChe = new google.maps.LatLng(48.258833, 25.956644);
-    var tikiPin = 'assets/img/map-pin.png';
-
-    function initialize() {
-        var mapPropLviv = {
-            zoomControl: true,
-            scrollwheel: false,
-            center: myCenterLviv,
-            zoom: 13,
-            disableDefaultUI: true,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var mapPropFranek = {
-            zoomControl: true,
-            scrollwheel: false,
-            center: myCenterFranek,
-            zoom: 16,
-            disableDefaultUI: true,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var mapPropTern = {
-            zoomControl: true,
-            scrollwheel: false,
-            center: myCenterTern,
-            zoom: 16,
-            disableDefaultUI: true,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var mapPropChe = {
-            zoomControl: true,
-            scrollwheel: false,
-            center: myCenterChe,
-            zoom: 16,
-            disableDefaultUI: true,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var mapLviv = new google.maps.Map(document.getElementById("googleMapLviv"), mapPropLviv);
-        var mapFranek = new google.maps.Map(document.getElementById("googleMapFranek"), mapPropFranek);
-        var mapTern = new google.maps.Map(document.getElementById("googleMapTern"), mapPropTern);
-        var mapChe = new google.maps.Map(document.getElementById("googleMapChe"), mapPropChe);
-
-        var myLypaMarker = new google.maps.Marker({
-            position: myLypaLviv,
-            icon: tikiPin,
-            map: mapLviv,
-            title: 'Крива Липа, 9'
-        });
-        var myGalyMarker = new google.maps.Marker({
-            position: myGalyLviv,
-            icon: tikiPin,
-            map: mapLviv,
-            title: 'Староєврейська, 4'
-        });
-        var myKulpaMarker = new google.maps.Marker({
-            position: myKulpaLviv,
-            icon: tikiPin,
-            map: mapLviv,
-            title: 'Кульпарківська, 59'
-        });
-        var myGardenMarker = new google.maps.Marker({
-            position: myGardenLviv,
-            icon: tikiPin,
-            map: mapLviv,
-            title: 'Кульпарківська, 226 а'
-        });
-        var myFranekMarker = new google.maps.Marker({
-            position: myCenterFranek,
-            icon: tikiPin,
-            map: mapFranek,
-            title: 'Незалежності,15'
-        });
-        var myTernMarker = new google.maps.Marker({
-            position: myCenterTern,
-            icon: tikiPin,
-            map: mapTern,
-            title: 'Гетьмана Сагайдачного,8'
-        });
-        var myCheMarker = new google.maps.Marker({
-            position: myCenterChe,
-            icon: tikiPin,
-            map: mapChe,
-            title: 'незабаром відкриття'
-        });
+    
+    var myCenterLviv=new google.maps.LatLng( 49.826450, 24.009124 );
+    var myLypaLviv=new google.maps.LatLng(49.840726, 24.026054);
+    var myGalyLviv=new google.maps.LatLng(49.840275, 24.031355);
+    var myKulpaLviv=new google.maps.LatLng(49.826935, 23.990317);
+    var myGardenLviv=new google.maps.LatLng(49.807253, 23.979343);
+    var myCenterFranek=new google.maps.LatLng(48.920133, 24.709970);
+    var myCenterTern=new google.maps.LatLng(49.552801, 25.593350);
+    var myCenterChe=new google.maps.LatLng(48.258833, 25.956644);
+    var tikiPin='assets/img/map-pin.png';
+    function initialize()
+    {
+    var mapPropLviv = {
+    zoomControl: true,
+    scrollwheel: false,
+    center:myCenterLviv,
+    zoom:13,
+    disableDefaultUI: true,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var mapPropFranek = {
+    zoomControl: true,
+    scrollwheel: false,
+    center:myCenterFranek,
+    zoom:16,
+    disableDefaultUI: true,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var mapPropTern = {
+    zoomControl: true,
+    scrollwheel: false,
+    center:myCenterTern,
+    zoom:16,
+    disableDefaultUI: true,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var mapPropChe = {
+    zoomControl: true,
+    scrollwheel: false,
+    center:myCenterChe,
+    zoom:16,
+    disableDefaultUI: true,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var mapLviv=new google.maps.Map(document.getElementById("googleMapLviv"),mapPropLviv);
+    var mapFranek=new google.maps.Map(document.getElementById("googleMapFranek"),mapPropFranek);
+    var mapTern=new google.maps.Map(document.getElementById("googleMapTern"),mapPropTern);
+    var mapChe=new google.maps.Map(document.getElementById("googleMapChe"),mapPropChe);
+    
+    var myLypaMarker=new google.maps.Marker({
+    position: myLypaLviv,
+    icon: tikiPin,
+    map: mapLviv,
+    title: 'Крива Липа, 9'
+    });
+    var myGalyMarker=new google.maps.Marker({
+    position: myGalyLviv,
+    icon: tikiPin,
+    map: mapLviv,
+    title: 'Староєврейська, 4'
+    });
+    var myKulpaMarker=new google.maps.Marker({
+    position: myKulpaLviv,
+    icon: tikiPin,
+    map: mapLviv,
+    title: 'Кульпарківська, 59'
+    });
+    var myGardenMarker=new google.maps.Marker({
+    position: myGardenLviv,
+    icon: tikiPin,
+    map: mapLviv,
+    title: 'Кульпарківська, 226 а'
+    });
+    var myFranekMarker=new google.maps.Marker({
+    position: myCenterFranek,
+    icon: tikiPin,
+    map: mapFranek,
+    title: 'Незалежності,15'
+    });
+    var myTernMarker=new google.maps.Marker({
+    position: myCenterTern,
+    icon: tikiPin,
+    map: mapTern,
+    title: 'Гетьмана Сагайдачного,8'
+    });
+    var myCheMarker=new google.maps.Marker({
+    position: myCenterChe,
+    icon: tikiPin,
+    map: mapChe,
+    title: 'незабаром відкриття'
+    });
     }
     google.maps.event.addDomListener(window, 'load', initialize);
     </script>
     <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-82329311-2', 'auto');
     ga('send', 'pageview');
     </script>
-</body>
-
+  </body>
 </html>
